@@ -1,0 +1,15 @@
+//Variables:
+
+//Crear una triple estructura que tenga cada uno de los tres tipos de bloque.
+
+//Poner los bytes a 0
+
+//Meter los datos que cada estructura. 150 de ancho y alto. los bitmap de /imagenes...
+
+
+
+
+
+
+el cuadrado 1 → 425, 425
+cuadrado 2 → 
