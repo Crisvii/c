@@ -18,9 +18,8 @@ int main(int argc, const char **argv){
     ALLEGRO_BITMAP *cuadrado_O = NULL;
     ALLEGRO_EVENT_QUEUE *evento = NULL;
     ALLEGRO_TIMER *reloj = NULL;
-
-
     bool doexit = false;
+    struct Bloque cuadrado[9];
 
     al_init();
     al_init_image_addon();
@@ -42,8 +41,6 @@ int main(int argc, const char **argv){
     al_register_event_source(evento, al_get_mouse_event_source());
     al_register_event_source(evento, al_get_timer_event_source(reloj));
     al_start_timer(reloj);
-
-    struct Bloque cuadrado[9];
 
     al_clear_to_color(al_map_rgb(62, 234, 157));
     al_flip_display();
