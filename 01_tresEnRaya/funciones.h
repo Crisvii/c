@@ -13,6 +13,6 @@ struct Bloque{
     ALLEGRO_BITMAP *img = NULL;
 };
 
-extern void meterDatos(struct Bloque bloque[9]);
+extern void iniciar(struct Bloque bloque[9], ALLEGRO_BITMAP *sprites, int posicionX[9], int posicionY[9]);
 
 #endif
