@@ -49,13 +49,13 @@ int main(int argc, const char **argv){
 
     /*Introducir datos en las posiciones*/
     inicialY -= 150;
-    for(int fila = 1; fila < 4; fila ++){
+    for(int fila = 0; fila < 3; fila ++){
         inicialX = 25;
         inicialY += 150;
-        for(int columna = 1; columna < 4;  columna ++){
-            inicialX += 150;
+        for(int columna = 0; columna < 3;  columna ++){
             posicionX[aux] = inicialX;
             posicionY[aux] = inicialY;
+            inicialX += 150;
             aux ++;
         }
     }
@@ -68,6 +68,11 @@ int main(int argc, const char **argv){
 
         if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
             doexit = true;
+
+        for(int i = 0; i < 9; i ++){
+            al_draw_bitmap(cuadrado[i].img, cuadrado[i].x, cuadrado[i].y, 0);
+        }
+        al_flip_display();
     }
 
     //Destruir variables de allegro:
