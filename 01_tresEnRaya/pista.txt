@@ -1,0 +1,7 @@
+Punto 1: X = 25		Y = 75
+Punto 2: X = 175	Y = 75
+Punto 3: X = 325	Y = 75
+Punto 4: X = 25		Y = 225
+
+inicialX = 25→→→→→ -150 → -125
+inicialY = 75→→→→→ -150 → -50vi 3	.cp

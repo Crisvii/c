@@ -10,6 +10,6 @@ void iniciar(struct Bloque cuadrado[9], ALLEGRO_BITMAP *sprites, int posicionX[9
         cuadrado[i].y = posicionY[i];
         cuadrado[i].width = TAMANIO;
         cuadrado[i].height = TAMANIO;
-        cuadrado[i].img = al_create_sub_bitmap(sprites, 0, 0, 150, 150);
+        cuadrado[i].img = al_create_sub_bitmap(sprites, 0, 0, 170, 170);
     }
 }

@@ -22,7 +22,7 @@ int main(int argc, const char **argv){
     int posicionX[9];
     int posicionY[9];
     int inicialX = 25;
-    int inicialY = 125;
+    int inicialY = 75;
     int aux = 0;
 
     al_init();
@@ -66,8 +66,12 @@ int main(int argc, const char **argv){
         ALLEGRO_EVENT ev;
         al_wait_for_event(evento, &ev);
 
-        if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
+        if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE){
+            for(int i = 0; i < 9; i ++){
+                printf("Punto %i: X = %i\t\tY= %i\n", i+1, posicionX[i], posicionY[i]);
+            }
             doexit = true;
+        }
 
         for(int i = 0; i < 9; i ++){
             al_draw_bitmap(cuadrado[i].img, cuadrado[i].x, cuadrado[i].y, 0);
